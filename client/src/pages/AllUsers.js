@@ -32,7 +32,7 @@ export default function AllUsers() {
                             {currentUser._id !== user._id && (
                                 <Col lg={7} xs={24}>
                           
-                                <div className='bs1 mt-5 p-8' style={{width: '300px',padding:'15px'}}>
+                                <div className='bs1 alus mt-5 p-8'>
                                 {user.profilePicUrl == '' ? 
                                 (<p className="profilepic2">{user.username[0]}</p>) :( <img src={user.profilePicUrl} height='60' width='60' style={{borderRadius: '50%'}} alt='' />)}      
                                 <Link to={`/profile/${user._id}`}>{user.username}</Link>

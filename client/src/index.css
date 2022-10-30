@@ -86,9 +86,18 @@ p{
   color: white;
 }
 
+.alus{
+  width: 300px;
+  padding: 15px;
+}
+
 @media only screen and  (max-width : 500px){
   .postimage{
     height: 200px !important;
+  }
+  .alus{
+    width: 250px;
+    padding: 10px;
   }
   .logotext {
     display: none !important;

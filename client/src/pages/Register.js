@@ -17,7 +17,7 @@ export default function Register() {
         <div className="register-maindiv">
             <Row justify="center" className="register-div align-items-center">
                  <Col lg={5} sm={24} xs={24}>
-                    <h1 className="left-title mr-3">OUR</h1>
+                    <h1 className="left-title ml-3 mr-3">OUR</h1>
                  </Col>
                 <Col lg={8} xs={25}>
                   <Form  layout="vertical" className="bs1 p-3" onFinish={register}>
@@ -40,7 +40,7 @@ export default function Register() {
                   </Form>
                 </Col>
                 <Col lg={5} sm={24} xs={24}>
-                    <h1 className="right-title ml-3">APP</h1>
+                    <h1 className="right-title mr-3 ml-3">APP</h1>
                  </Col>
             </Row>
         </div>

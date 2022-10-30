@@ -64,7 +64,7 @@ export default function Profile() {
 
         <Modal title='Followers' visible={followersDisplay} closable={false} onCancel={()=>{setFollowersDisplay(false)}} onOk={()=>{setFollowersDisplay(false)}}>
                  {user.followers.map(obj=>{
-                  const followeruser = users.find(o=>o._id==obj)
+                  const followeruser = users.find((ob) => ob._id === obj)
                   return (
                   <div className="d-flex align-items-center bs1 p-2 mt-2">
                        {followeruser.profilePicUrl == '' ? 
