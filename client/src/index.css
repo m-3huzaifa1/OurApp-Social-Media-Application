@@ -125,6 +125,7 @@ p{
 
 form {
   background-color: white !important;
+  border-radius: 5px !important;
 }
 
 .left-title {
