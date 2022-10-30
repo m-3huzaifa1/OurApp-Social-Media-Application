@@ -30,7 +30,7 @@ const { Header, Sider, Content } = Layout;
             <h4 className='hd pl-2 pt-3'> {JSON.parse(localStorage.getItem('user')).username}</h4>
             </div>
             
-            <h2 className='logotext pt-3'><Link to='/' >OurApp</Link></h2>
+            <h2 className='logotext pt-3'><Link to='/' >OurApp1</Link></h2>
             {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
               className: 'trigger',
               onClick: () => setCollapsed(!collapsed)
