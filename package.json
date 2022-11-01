@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Social Media Web Application",
   "main": "server.js",  
+  "engines": {
+    "node": "16.15.1",
+    "npm": "8.19.1"    
+  },
   "scripts": {
     "client-install": "npm install --prefix client",
     "server": "nodemon server.js",
