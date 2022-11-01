@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Layout, Menu } from 'antd';
 import React, { useState } from 'react';
 import './defaultlayout.css';  
-import {DownSquareOutlined,SaveOutlined,UsergroupAddOutlined,HomeOutlined,PlusOutlined ,MenuFoldOutlined,MenuUnfoldOutlined,UploadOutlined,UserOutlined,VideoCameraOutlined,LogoutOutlined} from '@ant-design/icons';
+import {MessageOutlined ,SaveOutlined,UsergroupAddOutlined,HomeOutlined,PlusOutlined ,MenuFoldOutlined,MenuUnfoldOutlined,UploadOutlined,UserOutlined,VideoCameraOutlined,LogoutOutlined} from '@ant-design/icons';
 const { Header, Sider, Content } = Layout;
   
   export default function DefaultLayout(props) {
@@ -90,8 +90,8 @@ const { Header, Sider, Content } = Layout;
                 label: <Link>Saved Posts</Link>,
               },
               {
-                icon: <DownSquareOutlined/>,
-                label: <Link>Archived Posts</Link>,
+                icon: <MessageOutlined/>,
+                label: <Link> Messages</Link>
               },
               {
                 icon: <LogoutOutlined/>,
