@@ -17,8 +17,8 @@ export default function Post({ post, postInProfile }) {
     const [editModal, setEditModal] = useState(false)
     const [comment, setComment] = useState('')
     const {users} = useSelector(state => state.usersReducer);
-
     const [description,setDescription] = useState(post.description);
+
     useEffect(() => {
         dispatch(getAllPosts())
     }, [likeOrUnlikeLoading,addCommentLoading,editPostLoading, deletePostLoading])

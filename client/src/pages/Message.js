@@ -7,7 +7,7 @@ export default function Message() {
         <DefaultLayout>
             <Row justify="center">
                 <Col lg={12} xs={24} >
-                <div className="bs1 msg m-5 p-3 text-center">
+                <div className="bs1 msg m-2 mt-5 p-3 text-center">
                     <br/><br/>
                     <h1>Chat using Chat Express</h1>
                     <br/><br/>
