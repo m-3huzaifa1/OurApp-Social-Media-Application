@@ -12,6 +12,7 @@ import { getAllPosts } from "./redux/actions/postAction";
 import { getAllUsers } from "./redux/actions/userActions";
 import AllUsers from "./pages/AllUsers";
 import Editprofile from "./pages/Editprofile";
+import Message from "./pages/Message";
 
 
 export default function App() {
@@ -38,6 +39,7 @@ export default function App() {
         <Route path='/addpost' exact element={<ProtectedRoute><Addpost/></ProtectedRoute>}/>
         <Route path='/allusers' exact element={<ProtectedRoute><AllUsers/></ProtectedRoute>}/>
         <Route path='/editprofile' exact element={<ProtectedRoute><Editprofile/></ProtectedRoute>}/>
+        <Route path='/message' exact element={<ProtectedRoute><Message/></ProtectedRoute>}/>
       </Routes>
       </BrowserRouter>
     </div>

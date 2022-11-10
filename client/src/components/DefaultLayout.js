@@ -91,7 +91,7 @@ const { Header, Sider, Content } = Layout;
               },
               {
                 icon: <MessageOutlined/>,
-                label: <Link> Messages</Link>
+                label: <Link to='/message'> Messages</Link>
               },
               {
                 icon: <LogoutOutlined/>,
