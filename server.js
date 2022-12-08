@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const app = express();
 const logger = require('morgan');
 const path = require('path');
+const cors = require('cors');
 
 const userRoute=require('./routes/userRoute');
 const postRoute=require('./routes/postRoute');
@@ -19,6 +20,8 @@ connect.then(()=>{
 app.use(logger('dev'));
 app.use(express.json({limit : '25mb'}));
 app.use(express.urlencoded({ extended: false }));
+app.use(cors());
+
 
 app.use('/api/users', userRoute);
 app.use('/api/posts', postRoute);

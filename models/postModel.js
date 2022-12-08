@@ -10,6 +10,9 @@ const postSchema= new Schema({
         type: String,
         required: true
     },
+    /*video: {
+        type: String
+    },*/
     comments: [{
         user: {type: Schema.Types.ObjectID, ref: 'users'},
         date: {type: String, required: true}, 

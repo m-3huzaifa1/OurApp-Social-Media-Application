@@ -1,18 +1,18 @@
 import "./App.css";
+import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 import {BrowserRouter,Route, Routes, Navigate} from 'react-router-dom';
 import Profile from './pages/Profile';
 import Addpost from './pages/Addpost';
 import Home from './pages/Home';
-import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 import Register from './pages/Register';
 import Login from './pages/Login';
+import AllUsers from "./pages/AllUsers";
+import Editprofile from "./pages/Editprofile";
+import Message from "./pages/Message";
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from "react";
 import { getAllPosts } from "./redux/actions/postAction";
 import { getAllUsers } from "./redux/actions/userActions";
-import AllUsers from "./pages/AllUsers";
-import Editprofile from "./pages/Editprofile";
-import Message from "./pages/Message";
 
 
 export default function App() {

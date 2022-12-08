@@ -10,7 +10,7 @@
   "scripts": {
     "client-install": "npm install --prefix client",
     "server": "nodemon server.js",
-    "client": "npm start --prefix client",
+    "client": "npm install --prefix client --f && npm start --prefix client --f",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "start": "nodemon server.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client --f && npm run build --prefix client --f"

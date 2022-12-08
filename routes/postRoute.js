@@ -6,11 +6,13 @@ const moment=require('moment');
 
 router.post('/addpost', async(req,res)=>{
     try {
+         
          const uploadResponse = await cloudinary.v2.uploader.upload(req.body.image, {
               folder: 'Our_App',
               use_filename: true
          });
          req.body.image = uploadResponse.url;
+        
          const newpost = new Post(req.body);
          await newpost.save();
          res.send('Post added successfully');

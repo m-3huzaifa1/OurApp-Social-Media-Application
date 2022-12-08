@@ -35,7 +35,6 @@ export default function Post({ post, postInProfile }) {
                     <p>{moment(post.createdAt).format('MMM DD YYYY')}</p>
                 </div>
             </div>
-
             <img src={post.image} style={{height: postInProfile == true && '200px'}} className='postimage w-100'/>
             <p className="mt-1 mb-1 text-left">{post.description}</p>
             <div className={postInProfile ? 'd-flex align-items-center justify-content-between' : "d-flex align-items-center"}>
