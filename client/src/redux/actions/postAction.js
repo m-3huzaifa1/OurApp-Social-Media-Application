@@ -30,7 +30,7 @@ export const getAllPosts = () => async dispatch => {
     try {
         const response = await axios.get('/api/posts/getallpost');
         dispatch({type: 'LOADING', payload:false})
-        dispatch({type: 'GET_ALL_POSTS', payload:response.data})
+        dispatch({type: 'GET_ALL_POSTS', payload:response?.data})
     
     } catch(error) {
         console.log(error);
