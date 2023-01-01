@@ -2,10 +2,10 @@
   "name": "ourapp",
   "version": "1.0.0",
   "description": "Social Media Web Application",
-  "main": "server.js",  
+  "main": "server.js",
   "engines": {
     "node": "16.15.1",
-    "npm": "8.19.1"    
+    "npm": "8.19.1"
   },
   "scripts": {
     "client-install": "npm install --prefix client",
@@ -19,6 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "cloudinary": "^1.32.0",
+    "cors": "^2.8.5",
     "express": "^4.18.1",
     "moment": "^2.29.4",
     "mongoose": "^6.6.1",
@@ -26,6 +27,3 @@
     "nodemon": "^2.0.20"
   }
 }
-
-
-
